@@ -1,0 +1,6 @@
+import pandas as pd
+
+df = pd.read_csv("sample.csv")
+
+print("CSV File Loaded Successfully")
+print(df.head())
