@@ -1,0 +1,10 @@
+import pandas as pd
+
+names = ["Anshika", "Rahul", "Mehak", "Sanya"]
+ages = [18, 20, 19, 22]
+cities = ["Lucknow", "Noida", "Kanpur", "Delhi"]
+
+df = pd.DataFrame(list(zip(names, ages, cities)), columns=["Name", "Age", "City"])
+
+print("💫 DataFrame from Lists 💫")
+print(df)
