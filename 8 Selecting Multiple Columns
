@@ -1,0 +1,15 @@
+import pandas as pd
+
+data = {
+    "Name": ["Anshika", "Riya", "Aditya", "Kabir"],
+    "Age": [18, 20, 19, 21],
+    "City": ["Lucknow", "Delhi", "Mumbai", "Chennai"],
+    "Score": [85, 90, 78, 88]
+}
+
+df = pd.DataFrame(data)
+
+selected = df[["Name", "Score"]]
+
+print("Selected Columns:")
+print(selected)
