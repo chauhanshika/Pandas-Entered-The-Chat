@@ -1,0 +1,14 @@
+import pandas as pd
+
+data = {
+    "Name": ["Anshika", "Riya", "Aditya", "Kabir", "Mehak"],
+    "Age": [18, 20, 19, 21, 20],
+    "Score": [85, 92, 78, 88, 91]
+}
+
+df = pd.DataFrame(data)
+
+filtered = df[df["Score"] > 85]
+
+print("Filtered Rows (Score > 85):")
+print(filtered)
